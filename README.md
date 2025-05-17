@@ -31,7 +31,7 @@ Belépve egy főmenü fogad minket, ahonnan öt irányba indulhatunk el.
 <p align="center">
 2. ábra: Menü
 <p align="center">
-    <img src="./assets/mainscreen.png" width="320">
+    <img src="./assets/menu-portrait.png" width="320">
 
 <p align="center">
 A képen a menü látható, ami az alkalmazásba belépve fogad.
@@ -47,8 +47,8 @@ A képernyők
 <p align="center">
 3. ábra: Egyenleg és tranzakciók
 <p align="center">
-<img src="./assets/summary.png" width="320">
-<img src="./assets/transactions.png" width="320">
+<img src="./assets/summary-portrait.png" width="320">
+<img src="./assets/list-portrait.png" width="320">
 
  <p align="center">
 Az első képen az összefoglaló oldal látható, a jobb oldalon pedig a tranzakciók listája.
@@ -62,7 +62,7 @@ Amikor a felhasználó egy Income/Bevétel-t rögzít a listába, akkor az ablak
 <p align="center">
 4. ábra: Hozzáadás
 <p align="center">
-<img src="./assets/add.png" width="320">
+<img src="./assets/add-portrait.png" width="320">
 
 <p align="center"> 
 A képen a tranzakciót hozzáadó dialógus látható
@@ -73,8 +73,8 @@ A harmadik képernyő a Diagrams/Diagramok képernyő. Ebben a menüben is egy k
 <p align="center">
 5. ábra: Beállítások és árfolyamok
 <p align="center">
-<img src="./assets/settings.png" width="320">
-<img src="./assets/rates.png" width="320">
+<img src="./assets/settings-portrait.png" width="320">
+<img src="./assets/rates-portrait.png" width="320">
 
 <p align="center"> 
 A képen a beállítás(ok) és a napi árfolyamok láthatók
@@ -85,7 +85,7 @@ A beállításokban most csak egy dolgot lehet beállítani, az alapértelmetett
 6. ábra: Diagramok
 <p align="center">
 <img src="./assets/pie-portrait.png" width="320">
-<img src="./assets/invsex-portrait.png" width="320">
+<img src="./assets/bar-portrait.png" width="320">
 
 <p align="center"> 
 Az első képen a kördiagram, a jobb oldalon pedig az oszlop.
@@ -97,7 +97,7 @@ Ebben a menüpontban megadhatunk egy összeget, amit el szeretnénk érni, és e
 7. ábra: Célok
 <p align="center">
 <img src="./assets/goal-portrait.png" width="320">
-<img src="./assets/goal_reached-portrait.png" width="320">
+<img src="./assets/goal_reach-portrait.png" width="320">
 
  <p align="center">
 Az első képen a cél beállítása után vagyunk, a másodikon pedig a cél elérése után játszódó animáció.

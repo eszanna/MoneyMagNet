@@ -14,7 +14,8 @@ b) opció: a projektet letöltve és AndroidStudio-ban futtatva emulátoron is k
 
 c) opció: a github repo linkjét telefonról megnyitva is le lehet tölteni az apk fájlt. A listában kiválasztva, a "view raw" opcióra kattintva elindul a letöltés, itt a böngészőnek kell engedélyt adni a telepítésre
 
-## Bemutatás: elérhető szintén a gyökér mappában egy rövid bemutató videó a működésről és a főbb funkciókról.
+## Bemutatás
+Elérhető a BEMUTATOK mappában egy rövid bemutató videó a működésről, illetve egy ppt (pdf formátumban is).
 Az alkalmazás egy kiadás és bevétel követő rendszer, ami segít átláthatóbbá tenni a felhasználó számára a pénzügyeit.
 A célközönség elsősorban diákok, fiatal felnőttek, akik szeretnék tudatosan kezelni a pénzüket. Olyanok, akik többféle pénznemben mozgatják a pénzüket, és egy tiszta, átfogó képet szeretnének kapni erről. 
 De igazából bárki, aki szereti a látványos grafikonokat, vagy úgy érzi, motiválná a megtakarításai gyűjtögetésében egy animációkkal kiegészített alkalmazás. 

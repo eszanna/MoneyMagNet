@@ -120,12 +120,14 @@ Az első képen a cél beállítása után vagyunk, a másodikon pedig a cél el
 - Az alapértelmezett pénznem és az árfolyamok a [Jetpack DataStore](https://developer.android.com/topic/libraries/architecture/datastore) segítségével kerülnek lokálisan elmentésre, így internetkapcsolat nélkül is, vagy ha elfogy az ingyenes lekérdezések száma, működőképes marad az app az utoljára ismert árfolyamokkal. Ezt a felhasználó az árfolyamoknál kiírt "utoljára frissítve" üzenetből veheti észre, TODO: értesítést küldeni, ha nem tudtunk újat lekérni
 
   ## Későbbre Todo-k:
-  - a location-t lehetne módosítható, térképen választható ponttal
+  - a location lehetne módosítható, térképen választható ponttal
   - felhasználói fiók regisztrálása
   - több különböző zseb/célt lehessen beállítani, pl. külön malacpersely 1 adott célra
   - autocomplete text (új kategória megadásánál, tranzakció nevének beírásakor)
   - engedély elkérésénél tájékoztató!
   - settings screen elég üres, a nyelv beállítás is lehetne ott ill. hozzáadni további beállítási lehetőségeket (sötét téma...)
   - pénzösszeg nagysága szerinti szűrésnél csak a számot nézi, nem váltja át a valutát :)
-  - a tranzakció hozzáadó gomb félig belóg az alsó menüsör alá
   - oszlopdiagramok szebben pozicionálása, animáció kicsit lassú
+  - kördiagramoknál rossz cím van
+  - api kulcs hardcodeolva
+    

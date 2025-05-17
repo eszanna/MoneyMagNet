@@ -11,7 +11,7 @@ A projekt gyökér mappájában található app-release.apk fájlt a telefonra m
 
 
 ## Bemutatás
-#Elérhető szintén a gyökér mappában egy rövid bemutató videó a működésről és a főbb funkciókról.
+# Elérhető szintén a gyökér mappában egy rövid bemutató videó a működésről és a főbb funkciókról.
 Az alkalmazás egy kiadás és bevétel követő rendszer, ami segít átláthatóbbá tenni a felhasználó számára a pénzügyeit.
 A célközönség elsősorban diákok, fiatal felnőttek, akik szeretnék tudatosan kezelni a pénzüket. Olyanok, akik többféle pénznemben mozgatják a pénzüket, és egy tiszta, átfogó képet szeretnének kapni erről. 
 De igazából bárki, aki szereti a látványos grafikonokat. :) 

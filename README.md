@@ -10,11 +10,10 @@
 A projekt gyökér mappájában található app-release.apk fájlt a telefonra másolva és telepítve lehet kipróbálni. Első telepítésnél a Google ellenőrizni szeretné, mert még nem találkozott ezzel az alkalmazással. Vagy előfordul, hogy a telefon beállításaiban engedélyezni kell az ebből a forrásból (pl Google Drive, ha linkről töltjük le) származó alkalmazás telepítését. 
 
 
-## Bemutatás
-# Elérhető szintén a gyökér mappában egy rövid bemutató videó a működésről és a főbb funkciókról.
+## Bemutatás: elérhető szintén a gyökér mappában egy rövid bemutató videó a működésről és a főbb funkciókról.
 Az alkalmazás egy kiadás és bevétel követő rendszer, ami segít átláthatóbbá tenni a felhasználó számára a pénzügyeit.
 A célközönség elsősorban diákok, fiatal felnőttek, akik szeretnék tudatosan kezelni a pénzüket. Olyanok, akik többféle pénznemben mozgatják a pénzüket, és egy tiszta, átfogó képet szeretnének kapni erről. 
-De igazából bárki, aki szereti a látványos grafikonokat. :) 
+De igazából bárki, aki szereti a látványos grafikonokat, vagy úgy érzi, motiválná a megtakarításai gyűjtögetésében egy animációkkal kiegészített alkalmazás. 
 
 ## Főbb funkciók
 

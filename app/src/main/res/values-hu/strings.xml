@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Money MagNet</string>
+    <string name="home_title">Kezdőlap</string>
+    <string name="summary_title">Összegzés</string>
+    <string name="transactions_title">Tranzakciók</string>
+    <string name="charts_title">Diagramok</string>
+    <string name="goals_title">Célok</string>
+    <string name="exchange_rates">Árfolyamok</string>
+    <string name="exchange_rates_for">Árfolyamok: %s</string>
+    <string name="detail_title">Tranzakció részletei</string>
+    <string name="edit_title">Tranzakció szerkesztése</string>
+    <string name="add_transaction_title">Tranzakció hozzáadása</string>
+
+    <string name="income_by_cat">Bevételek kategóriák szerint</string>
+    <string name="expenses_by_cat">Kiadások kategóriák szerint</string>
+    <string name="monthly_in_vs_ex">Havi kiadás vs bevétel</string>
+    <string name="pie_by_cat">"Kördiagram kategóriák szerint"</string>
+    <string name="back">Vissza</string>
+    <string name="income_vs_expense">"Bevétel vs Kiadás"</string>
+    <string name="month">Hónap</string>
+    <string name="save">Mentés"</string>
+    <string name="enter_pos">Pozitív számot adj meg</string>
+    <string name="view_transactions">Tranzakciók megtekintése</string>
+    <string name="your_balance">💼 Egyenleged</string>
+    <string name="goal_amount">Cél összeg %1$s</string>
+    <string name="set_new_goal">Új cél beállítása</string>
+    <string name="set_goal">Cél beállítása</string>
+    <string name="amount_label">Összeg</string>
+    <string name="description_label">Leírás</string>
+    <string name="category_label">Kategória</string>
+    <string name="date">Dátum</string>
+    <string name="location_label">Hely</string>
+    <string name="show_on_map">Mutatás a térképen</string>
+    <string name="no_location">Nincs hely rögzítve</string>
+    <string name="add_button">Hozzáad</string>
+    <string name="cancel_button">Mégse</string>
+    <string name="save_button">Mentés</string>
+    <string name="income">Bevétel</string>
+    <string name="expense">Kiadás</string>
+    <string name="all_months">Összes hónap</string>
+    <string name="select_date">Dátum választása: %s</string>
+    <string name="new_category_hint">Új kategória (opcionális)</string>
+    <string name="save_category">Kategória mentése</string>
+    <string name="delete">Törlés</string>
+    <string name="undo">VISSZA</string>
+    <string name="sort">Rendezés</string>
+    <string name="filter">Szűrő</string>
+    <string name="no_transactions">Még nincs tranzakció.</string>
+    <string name="congrats">🎉 Gratulálok! 🎉\n Elérted a beállított célt"</string>
+    <string name="close">Bezárás</string>
+    <string name="cancel">Mégse</string>
+    <string name="goal_text">Cél: %1$s %2$s</string>
+    <string name="saved_text">%1$s %2$s megtakarítva</string>
+    <string name="no_goal">Nincs beállítva cél</string>
+    <string name="goals">Célok</string>
+    <string name="any">Mind</string>
+    <string name="cat">Kategória</string>
+    <string name="all">Mind</string>
+    <string name="transaction_details">Tranzakció részletei</string>
+    <string name="type_label">Típus</string>
+    <string name="lang_english">Angol</string>
+    <string name="lang_hungarian">Magyar</string>
+    <string name="edit_transaction">Tranzakció szerkesztése</string>
+
+    <!-- SortOption labels -->
+    <string name="sort_newest">Legújabb</string>
+    <string name="sort_oldest">Legrégebbi</string>
+    <string name="sort_income_first">Bevételek előbb</string>
+    <string name="sort_expense_first">Kiadások előbb</string>
+    <string name="sort_category">Kategória A–Z</string>
+    <string name="sort_amount_desc">Összeg ↓</string>
+    <string name="sort_amount_asc">Összeg ↑</string>
+
+    <!-- TypeFilter labels -->
+    <string name="filter_all">Mind</string>
+    <string name="filter_income">Bevétel</string>
+    <string name="filter_expense">Kiadás</string>
+
+    <string name="total_balance_text">Teljes egyenleg: %1$s %2$s</string>
+    <string name="filtered_balance_text">Egyenleg szűrés után: %1$s %2$s</string>
+
+    <!-- default categories -->
+    <string name="category_common">Általános</string>
+    <string name="category_food">Étel</string>
+    <string name="category_work">Munka</string>
+    <string name="category_transport">Közlekedés</string>
+    <string name="category_entertainment">Szórakozás</string>
+
+    <string name="delete_category_title">Törli a(z) „%1$s” kategóriát?</string>
+    <string name="delete_category_text">
+        Minden „%1$s” kategóriába tartozó tranzakció a Common kategóriába kerül.
+    </string>
+
+    <string name="date_label">Dátum: %1$s</string>
+
+    <string name="settings_title">Beállítások</string>
+    <string name="select_default_currency">Válassz alapértelmezett valutát</string>
+    <string name="currency_label">Valuta</string>
+
+    <string name="amount_formatted">%1$.2f %2$s</string>
+
+    <string name="amount_with_currency">%1$s %2$s</string>
+    <string name="total_balance_label">Teljes vagyon</string>
+    <string name="search">Keresés</string>
+    <string name="no_match">Nincs találat</string>
+
+    <string name="last_updated">Utoljára frissítve: %1$s</string>
+</resources>

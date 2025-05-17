@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Money MagNet</string>
+    <string name="home_title">Home</string>
+    <string name="summary_title">Summary</string>
+    <string name="transactions_title">Transactions</string>
+    <string name="charts_title">Diagrams</string>
+    <string name="goals_title">Goals</string>
+    <string name="detail_title">Transaction details</string>
+    <string name="exchange_rates">Exchange Rates</string>
+    <string name="exchange_rates_for">Exchange Rates for %s</string>
+    <string name="edit_title">Edit transaction</string>
+    <string name="add_transaction_title">Add transaction</string>
+
+    <!-- Labels & Buttons -->
+    <string name="income_by_cat">Income by category</string>
+    <string name="expenses_by_cat">Expenses by category</string>
+    <string name="monthly_in_vs_ex">Monthly income vs expense</string>
+    <string name="pie_by_cat">Pie chart by category</string>
+    <string name="back">Back</string>
+    <string name="income_vs_expense">Income vs Expense</string>
+    <string name="month">Month</string>
+    <string name="save">Save</string>
+    <string name="enter_pos">Enter a positive number</string>
+    <string name="view_transactions">View Transactions</string>
+    <string name="your_balance">💼 Your Balance</string>
+    <string name="goal_amount">"Goal Amount %1$s</string>
+    <string name="set_new_goal">Set a new goal</string>
+    <string name="set_goal">Set goal</string>
+    <string name="amount_label">Amount</string>
+    <string name="description_label">Description</string>
+    <string name="category_label">Category</string>
+    <string name="date">Date</string>
+    <string name="location_label">Location</string>
+    <string name="show_on_map">Show on map</string>
+    <string name="no_location">No location recorded</string>
+    <string name="add_button">Add</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="save_button">Save</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="all_months">All months</string>
+    <string name="select_date">Select date: %s</string>
+    <string name="new_category_hint">New category (optional)</string>
+    <string name="save_category">Save category</string>
+    <string name="delete">Delete</string>
+    <string name="undo">UNDO</string>
+    <string name="sort">Sort</string>
+    <string name="filter">Filter</string>
+    <string name="no_transactions">No transactions yet.</string>
+    <string name="congrats">🎉 Congratulations! 🎉\n You reached your set goal"</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_goal">No Goal Set</string>
+    <string name="goal_text">Goal: %1$s %2$s</string>
+    <string name="saved_text">%1$s %2$s saved</string>
+    <string name="goals">Goals</string>
+    <string name="any">Any</string>
+    <string name="cat">Category</string>
+    <string name="all">All</string>
+    <string name="transaction_details">Transaction details</string>
+    <string name="edit_transaction">Edit transaction</string>
+
+    <string name="type_label">Type</string>
+    <string name="lang_english">English</string>
+    <string name="lang_hungarian">Hungarian</string>
+
+    <!-- SortOption labels -->
+    <string name="sort_newest">Newest</string>
+    <string name="sort_oldest">Oldest</string>
+    <string name="sort_income_first">Income first</string>
+    <string name="sort_expense_first">Expense first</string>
+    <string name="sort_category">Category A–Z</string>
+    <string name="sort_amount_desc">Amount ↓</string>
+    <string name="sort_amount_asc">Amount ↑</string>
+
+    <!-- TypeFilter labels -->
+    <string name="filter_all">All</string>
+    <string name="filter_income">Income</string>
+    <string name="filter_expense">Expense</string>
+
+    <string name="total_balance_text">Total Balance: %1$s %2$s</string>
+    <string name="filtered_balance_text">Balance (filtered): %1$s %2$s</string>
+
+    <!-- default categories -->
+    <string name="category_common">Common</string>
+    <string name="category_food">Food</string>
+    <string name="category_work">Work</string>
+    <string name="category_transport">Transport</string>
+    <string name="category_entertainment">Entertainment</string>
+
+    <!-- delete‐category dialog -->
+    <string name="delete_category_title">Delete category “%1$s”?</string>
+    <string name="delete_category_text">
+        All transactions in “%1$s” will move to Common.
+    </string>
+
+    <string name="date_label">Date: %1$s</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="select_default_currency">Select default currency</string>
+    <string name="currency_label">Currency</string>
+
+    <string name="amount_formatted">%1$.2f %2$s</string>
+
+    <string name="amount_with_currency">%1$s %2$s</string>
+    <string name="total_balance_label">Total Balance</string>
+    <string name="search">Search</string>
+
+    <string name="no_match">No match</string>
+
+    <string name="last_updated">Last updated: %1$s</string>
+
+</resources>

@@ -1,0 +1,149 @@
+# Házi feladat specifikáció v2.0
+
+Információk [itt](https://viauav21.github.io/laborok/hf)
+
+## Androidalapú szoftverfejlesztés
+### 2025 2. félév
+### Szlovák Anna - (OPOFGK)
+### szlovak.anna2003@gmail.com 
+### Laborvezető: Gazdi László
+
+## Bemutatás
+
+Az alkalmazás egy kiadás és bevétel követő rendszer, ami segít átláthatóbbá tenni a felhasználó számára a pénzügyeit. A célközönség elsősorban diákok, fiatal felnőttek, akik szeretnék tudatosan kezelni a pénzüket. De igazából bárki, aki szereti a látványos grafikonokat. :) 
+
+## Főbb funkciók
+
+A felhasználó meg tudja adni a bevételét, kiadásait. (Pozitív és negatív irányú pénzmozgás.)
+Ezen kívül be lehet állítani az elérni kívánt cél összeget.
+Ezek ábrázolása diagramon, grafikonon.
+~~Az alkalmazás értesítést küld, ha a kiadások meghaladják az előre beállított határértéket.~~ <- Ennek valóban nem volt értelme. 
+
+## Választott technológiák:
+
+Kötelezően:
+- Compose UI
+- MVVM 
+- Dependency Injection (Hilt a ViewModel és DAO-k injektálására)
+  
+3 választott:
+- Adatbáziskezelés: A múltbéli kiadások és bevételeket az alkalmazás perzisztensen tárolja (ROOM)
+- ~~Notificationök: Az alkalmazás értesítést küld, ha a kiadások meghaladják az előre beállított határértéket~~
+- ~~Stílusok/témák (komplex, teljes alkalmazásra kiterjedő kinézet) (Material3)~~
+- Komplex animációk: Lottie alapú overlayek és kis mozgó ábrák, diagramok animálása
+- Pozíciómeghatározás: a tranzakciókhoz elmenti, hogy hol jöttek létre
+___
+
+# Házi feladat dokumentáció
+
+### MoneyMagNet
+
+<p align="center">
+1. ábra: Ikon 
+	<p align="center">
+	<img src="./assets/icon.png" width="160">
+
+## Bemutatás
+
+Az alkalmazás egy kiadás és bevétel követő rendszer, ami segít átláthatóbbá tenni a felhasználó számára a pénzügyeit.
+A célközönség elsősorban diákok, fiatal felnőttek, akik szeretnék tudatosan kezelni a pénzüket. De igazából bárki, aki szereti a látványos grafikonokat. :) 
+
+## Főbb funkciók
+
+A felhasználó meg tudja adni a bevételét, kiadásait. (Pozitív és negatív irányú pénzmozgás.)
+Ezen kívül be lehet állítani az elérni kívánt cél összeget.
+Ezek ábrázolása diagramon, grafikonon.
+
+## Felhasználói kézikönyv
+
+Az alkalmazást angol és magyar nyelven készítettem el, a nyelvek között a kis földgömb ikonra kattintva lehet váltani az alkalmazáson belül a menü képernyőről.
+
+Belépve egy főmenü fogad minket, ahol 4 irányba indulhatunk el. 
+- Summary / Összegzés
+- Transactions / Tranzakciók
+- Diagrams / Diagramok
+- Goals / Célok
+  
+<p align="center">
+2. ábra: Menü
+<p align="center">
+    <img src="./assets/menu-portrait.png" width="320">
+
+<p align="center">
+A képen a menü látható, ami az alkalmazásba belépve fogad.
+
+A Tranzakció
+
+Egy tranzakciónak magán az összegen kívül (**Amount/Összeg**) van egy **Description-je/Leírás-a**, ez alapján a felhasználó könnyebben be tudja azonosítani. Tartozik hozzá még egy **Category/Kategória**, amit egy előre megadott listából lehet kiválasztani, de sajátot is lehet hozzáadni, és a saját kategóriákat törölni is lehet később. (Ekkor egy megerősítő képernyő jelenik meg, ami megkérdezi, tényleg szeretnénk-e törölni, és ha igen, akkor az összes ebbe a kategóriába tartozó tranzakció átkerül a Common nevű kategóriába. Vagy mégsem szeretnénk törölni.) Ezen kívül van egy **Date/Dátum** is hozzá, amit lehet változtatni, illetve az alkalmazás elmenti a tranzakció létrehozásának helyét, (**Location/Hely**) és ezt a koordinátát meg tudjuk nézni a Google Maps-en a "Show on map/Mutatás a térképen" gombbal. Ehhez az szükséges, hogy a felhasználó megadja az **engedélyt**, ami az új tranzakció létrehozásánál ugrik fel. 
+
+A képernyők
+
+  A Summary képernyőn egy aranyos malacpersely animáció található, alatta pedig az alkalmazásban megadott tranzakciókból kiszámolt pénzmennyiség. Vagyis az egyenleg. Innen a gombra kattintva szintén elnavigálhatunk a Transactions képernyőre, ahol láthatjuk, pontosan miből számolta ki ezt az egyenleget.
+
+<p align="center">
+3. ábra: Tranzakciók és egyenleg
+<p align="center">
+<img src="./assets/summary-portrait.png" width="320">
+<img src="./assets/Trans-portrait.png" width="320">
+
+ <p align="center">
+Az első képen az összefoglaló oldal látható, a jobb oldalon pedig a tranzakciók listája.
+	
+A Transactions képernyő tehát egy lista, minden eleme egy Transaction, egy bevételt vagy egy kiadást reprezentál. Ezen az oldalon lehetőségünk van **rendezni** a listát, sok sok opció szerint (tranzakció időpontja, kategóriája, összeg nagysága...). Illetve **szűrni** is tudunk, ha például csak a bevételeket, csak a kiadásokat, vagy csak egy adott kategória elemeit szeretnénk látni. A listában csak a Description/Leírás mező látszik, a dátum és az összeg, a többi részletért rá kell kattintatni a listaelemre, amikoris megnyílik a részletes tranzakció leíró képernyő, és ennek a jobb alsó sarkában a **szerkesztés gomb**. 
+
+Még mielőtt oda navigálnánk, a lista nézetben található egy + gomb, amivel **hozzáadhatjuk** az új tranzakciót. Ezt meg lehet tenni úgy is, hogyha nem szeretnénk neki leírást adni, csak az összeget kötelező kitölteni, a többi mező automatikus, vagy nem kötelező. 
+
+Amikor a felhasználó egy Income/Bevétel-t rögzít a listába, akkor az ablak bezáródása után egy **pénzeső animációt** láthatunk lejátszódni, ami kb 1 másodperces, és konfettiként is lehet rá tekinteni, de igazából papírpénz hullik a képernyőn. Ezzel is motiváljuk a felhasználót a bevételei rögzítésére. 
+
+<p align="center">
+4. ábra: Hozzáadás
+<p align="center">
+<img src="./assets/add-portrait.png" width="320">
+
+<p align="center"> 
+A képen a tranzakciót hozzáadó dialógus látható
+	
+A harmadik képernyő a Diagrams/Diagramok képernyő. Ebben a menüben is egy kis animáció látható. Itt kétféle statisztikát tudunk megnézni a tranzakcióinkról: egy **kördiagramot**, ahol a kategóriák szerinti eloszlást lehet látni, itt is lehetőség van hónapra, bevételre/kiadásra **szűrni**, és a diagram **animáltan** jelenik meg. Minden belépéskor más színeket használ az egyes szeletekhez. Ez egy elég látványos és hasznos funkció. A másik opció, egy **oszlopdiagram**, ahol a bevételeinket hasonlíthatjuk össze a kiadásainkkal. 
+
+<p align="center">
+5. ábra: Diagramok
+<p align="center">
+<img src="./assets/pie-portrait.png" width="320">
+<img src="./assets/invsex-portrait.png" width="320">
+
+<p align="center"> 
+Az első képen a kördiagram, a jobb oldalon pedig az oszlop.
+	
+A negyedik és egyben egyelőre utolsó képernyő a **Goals/Célok**
+Ebben a menüpontban megadhatunk egy összeget, amit el szeretnénk érni, és egy kördiagramon láthatjuk, mennyire vagyunk még a céltól. Amikor a megtakarított összeg eléri (>=) a cél összeget, egy nagyon aranyos táncoló galamb animációt kapunk, ami addig táncol, amíg a felhasználó be nem zárja.
+
+<p align="center">
+6. ábra: Célok
+<p align="center">
+<img src="./assets/goal-portrait.png" width="320">
+<img src="./assets/goal_reached-portrait.png" width="320">
+
+ <p align="center">
+Az első képen a cél beállítása után vagyunk, a másodikon pedig a cél elérése után játszódó animáció.
+
+## Felhasznált technológiák:
+
+- [Lottie Compose](https://github.com/airbnb/lottie/blob/master/android-compose.md) az animációkhoz, Lottie fájlok megjelenítésére és vezérlésére
+- [kotlinx.coroutines](https://developer.android.com/kotlin/coroutines) és [Flow](https://developer.android.com/kotlin/flow) az aszinkron adatfolyam-kezeléshez és UI-frissítésekhez
+- [Room](https://developer.android.com/jetpack/androidx/releases/room) adatbázis az SQLite-alapú perzisztenciához, beleértve egyedi TypeConverter-t (LocalDateConverter) a LocalDate mezők kezelésére
+- [Hilt](https://dagger.dev/hilt/) (Dagger-Hilt) dependency injection a ViewModel-ek, repository-k és DAO-k egyszerű injektálásához
+- [Navigation Compose](https://developer.android.com/develop/ui/compose/navigation) a képernyők közötti navigáció deklaratív, visszakövethető kezeléséhez
+- [Play Services Location](https://developers.google.com/android/reference/com/google/android/gms/location/LocationServices) (FusedLocationProviderClient) a tranzakciók geotag-eléséhez, felhasználói pozíció lekérdezésére
+- [ActivityResultContracts.RequestPermission](https://developer.android.com/reference/androidx/activity/result/contract/ActivityResultContracts.RequestPermission) futásidőbeli jogosultság-kezelés a helyszíni adatok biztonságos lekéréséhez
+- [Implicit Intent](https://developer.android.com/guide/components/intents-filters) használata térképalkalmazás megnyitására geo: URI-val a “Mutatás térképen” gombbal
+- [ExposedDropdownMenuBox](https://composables.com/material3/exposeddropdownmenubox) és [FilterChip](https://developer.android.com/develop/ui/compose/components/chip) komponensek komplex szűrési és rendezési logikához
+- [Snackbar](https://developer.android.com/develop/ui/compose/components/snackbar) alapú undo mechanizmus a tranzakciók törlésének visszavonására
+- [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) & Lifecycle integráció ([viewModelScope](https://developer.android.com/topic/libraries/architecture/viewmodel/viewmodel-apis), [collectAsStateWithLifecycle](https://developer.android.com/develop/ui/compose/state)) a komponensek életciklus-követett adatkezeléséhez
+
+  ## Későbbre Todo-k:
+  - a Default Category-k nem lettek lefordítva magyarra!
+  - a location-t lehetne módosítható, térképen választható ponttal
+  - felhasználói fiók regisztrálása
+  - több különböző zseb/célt lehessen beállítani, pl. külön malacpersely 1 adott célra
+  - autocomplete text (új kategória megadásánál, tranz, nevénél)
+  - engedély elkérésénél tájékoztató

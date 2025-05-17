@@ -73,7 +73,7 @@ A harmadik képernyő a Diagrams/Diagramok képernyő. Ebben a menüben is egy k
 <p align="center">
 5. ábra: Beállítások és árfolyamok
 <p align="center">
-<img src="./assets/settings-portrait.png" width="320">
+<img src="./assets/setting-portrait.png" width="320">
 <img src="./assets/rates-portrait.png" width="320">
 
 <p align="center"> 

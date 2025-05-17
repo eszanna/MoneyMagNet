@@ -1,12 +1,3 @@
-# Házi feladat specifikáció v2.0
-
-Információk [itt](https://viauav21.github.io/laborok/hf)
-
-## Androidalapú szoftverfejlesztés
-### 2025 2. félév
-### Szlovák Anna - (OPOFGK)
-### szlovak.anna2003@gmail.com 
-### Laborvezető: Gazdi László
 
 ## Bemutatás
 
@@ -17,7 +8,7 @@ Az alkalmazás egy kiadás és bevétel követő rendszer, ami segít átláthat
 A felhasználó meg tudja adni a bevételét, kiadásait. (Pozitív és negatív irányú pénzmozgás.)
 Ezen kívül be lehet állítani az elérni kívánt cél összeget.
 Ezek ábrázolása diagramon, grafikonon.
-~~Az alkalmazás értesítést küld, ha a kiadások meghaladják az előre beállított határértéket.~~ <- Ennek valóban nem volt értelme. 
+
 
 ## Választott technológiák:
 
@@ -28,13 +19,11 @@ Kötelezően:
   
 3 választott:
 - Adatbáziskezelés: A múltbéli kiadások és bevételeket az alkalmazás perzisztensen tárolja (ROOM)
-- ~~Notificationök: Az alkalmazás értesítést küld, ha a kiadások meghaladják az előre beállított határértéket~~
-- ~~Stílusok/témák (komplex, teljes alkalmazásra kiterjedő kinézet) (Material3)~~
 - Komplex animációk: Lottie alapú overlayek és kis mozgó ábrák, diagramok animálása
 - Pozíciómeghatározás: a tranzakciókhoz elmenti, hogy hol jöttek létre
 ___
 
-# Házi feladat dokumentáció
+# Dokumentáció
 
 ### MoneyMagNet
 
@@ -43,26 +32,16 @@ ___
 	<p align="center">
 	<img src="./assets/icon.png" width="160">
 
-## Bemutatás
-
-Az alkalmazás egy kiadás és bevétel követő rendszer, ami segít átláthatóbbá tenni a felhasználó számára a pénzügyeit.
-A célközönség elsősorban diákok, fiatal felnőttek, akik szeretnék tudatosan kezelni a pénzüket. De igazából bárki, aki szereti a látványos grafikonokat. :) 
-
-## Főbb funkciók
-
-A felhasználó meg tudja adni a bevételét, kiadásait. (Pozitív és negatív irányú pénzmozgás.)
-Ezen kívül be lehet állítani az elérni kívánt cél összeget.
-Ezek ábrázolása diagramon, grafikonon.
-
 ## Felhasználói kézikönyv
 
 Az alkalmazást angol és magyar nyelven készítettem el, a nyelvek között a kis földgömb ikonra kattintva lehet váltani az alkalmazáson belül a menü képernyőről.
 
-Belépve egy főmenü fogad minket, ahol 4 irányba indulhatunk el. 
+Belépve egy főmenü fogad minket, ahol öt irányba indulhatunk el. 
 - Summary / Összegzés
 - Transactions / Tranzakciók
 - Diagrams / Diagramok
 - Goals / Célok
+- Exchange Rates / Árfolyamok
   
 <p align="center">
 2. ábra: Menü

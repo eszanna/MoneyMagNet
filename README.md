@@ -5,6 +5,11 @@
 	<p align="center">
 	<img src="./assets/icon.png" width="160">
 
+## Telepítés
+
+A projekt gyökér mappájában található app-release.apk fájlt a telefonra másolva és telepítve lehet kipróbálni. Első telepítésnél a Google ellenőrizni szeretné, mert még nem találkozott ezzel az alkalmazással. Vagy előfordul, hogy a telefon beállításaiban engedélyezni kell az ebből a forrásból (pl Google Drive, ha linkről töltjük le) származó alkalmazás telepítését. 
+
+
 ## Bemutatás
 
 Az alkalmazás egy kiadás és bevétel követő rendszer, ami segít átláthatóbbá tenni a felhasználó számára a pénzügyeit.

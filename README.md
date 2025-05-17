@@ -105,19 +105,15 @@ Az első képen a cél beállítása után vagyunk, a másodikon pedig a cél el
 ## Felhasznált technológiák:
 
 - [Lottie Compose](https://github.com/airbnb/lottie/blob/master/android-compose.md) az animációkhoz, Lottie fájlok megjelenítésére és vezérlésére
-- [kotlinx.coroutines](https://developer.android.com/kotlin/coroutines) és [Flow](https://developer.android.com/kotlin/flow) az aszinkron adatfolyam-kezeléshez és UI-frissítésekhez
 - [Room](https://developer.android.com/jetpack/androidx/releases/room) adatbázis az SQLite-alapú perzisztenciához, beleértve egyedi TypeConverter-t (LocalDateConverter) a LocalDate mezők kezelésére
 - [Hilt](https://dagger.dev/hilt/) (Dagger-Hilt) dependency injection a ViewModel-ek, repository-k és DAO-k egyszerű injektálásához
 - [Navigation Compose](https://developer.android.com/develop/ui/compose/navigation) a képernyők közötti navigáció deklaratív, visszakövethető kezeléséhez
 - [Play Services Location](https://developers.google.com/android/reference/com/google/android/gms/location/LocationServices) (FusedLocationProviderClient) a tranzakciók geotag-eléséhez, felhasználói pozíció lekérdezésére
 - [ActivityResultContracts.RequestPermission](https://developer.android.com/reference/androidx/activity/result/contract/ActivityResultContracts.RequestPermission) futásidőbeli jogosultság-kezelés a helyszíni adatok biztonságos lekéréséhez
 - [Implicit Intent](https://developer.android.com/guide/components/intents-filters) használata térképalkalmazás megnyitására geo: URI-val a “Mutatás térképen” gombbal
-- [ExposedDropdownMenuBox](https://composables.com/material3/exposeddropdownmenubox) és [FilterChip](https://developer.android.com/develop/ui/compose/components/chip) komponensek komplex szűrési és rendezési logikához
-- [Snackbar](https://developer.android.com/develop/ui/compose/components/snackbar) alapú undo mechanizmus a tranzakciók törlésének visszavonására
-- [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) & Lifecycle integráció ([viewModelScope](https://developer.android.com/topic/libraries/architecture/viewmodel/viewmodel-apis), [collectAsStateWithLifecycle](https://developer.android.com/develop/ui/compose/state)) a komponensek életciklus-követett adatkezeléséhez
 - [Retrofit](https://square.github.io/retrofit/) könyvtárral hálózat elérése a napi árfolyamhoz
 - [Árfolyamok](https://www.exchangerate-api.com/) Exchangerate-api-val, egy ingyenes API kulcsot használva, ami havi 1500 lekérést tesz lehetővé, napi 1 db lekérést indít az alkalmazás.
-- Az alapértelmezett pénznem és az árfolyamok a [Jetpack DataStore](https://developer.android.com/topic/libraries/architecture/datastore) segítségével kerülnek lokálisan elmentésre, így internetkapcsolat nélkül is, vagy ha elfogy az ingyenes lekérdezések száma, működőképes marad az app az utoljára ismert árfolyamokkal. Ezt a felhasználó az árfolyamoknál kiírt "utoljára frissítve" üzenetből veheti észre, TODO: értesítést küldeni, ha nem tudtunk újat lekérni
+- Az alapértelmezett pénznem és az árfolyamok a [Jetpack DataStore](https://developer.android.com/topic/libraries/architecture/datastore) segítségével kerülnek lokálisan elmentésre, így internetkapcsolat nélkül is, vagy ha elfogy az ingyenes lekérdezések száma, működőképes marad az app az utoljára ismert árfolyamokkal. Ezt a felhasználó az árfolyamoknál kiírt "utoljára frissítve" üzenetből veheti észre
 
   ## Későbbre Todo-k:
   - a location lehetne módosítható, térképen választható ponttal
@@ -130,4 +126,4 @@ Az első képen a cél beállítása után vagyunk, a másodikon pedig a cél el
   - oszlopdiagramok szebben pozicionálása, animáció kicsit lassú
   - kördiagramoknál rossz cím van
   - api kulcs hardcodeolva
-    
+  - értesíteni a felhasználót ha a napi árfolyam lekérése meghiúsult

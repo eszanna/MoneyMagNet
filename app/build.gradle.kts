@@ -1,6 +1,3 @@
-import com.android.manifmerger.Actions.load
-import java.util.Properties
-
 
 plugins {
     alias(libs.plugins.android.application)
@@ -9,16 +6,6 @@ plugins {
     alias(libs.plugins.kotlin.ksp)
     alias(libs.plugins.google.dagger.hilt.android)
 }
-
-val localProperties = Properties().apply {
-    val localFile = rootProject.file("local.properties")
-    if (localFile.exists()) {
-        localFile.inputStream().use { load(it) }
-    }
-}
-
-val apiKey: String = localProperties.getProperty("EXCHANGE_RATE_API_KEY")
-    ?: throw GradleException("Missing EXCHANGE_RATE_API_KEY in local.properties")
 
 
 android {
@@ -34,7 +21,6 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "EXCHANGE_RATE_API_KEY", "\"$apiKey\"")
     }
 
     buildTypes {

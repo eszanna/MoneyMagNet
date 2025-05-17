@@ -2,6 +2,7 @@ package hu.bme.aut.android.hw
 
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +19,11 @@ class MainActivity :  AppCompatActivity() {
                 NavGraph()
             }
         }
+        window.decorView.systemUiVisibility = (
+                View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+                        or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                )
     }
+
 }
 

@@ -23,7 +23,6 @@ import hu.bme.aut.android.hw.viewmodel.TransactionViewModel
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MainSummaryScreen(
-    totalBalance: Double,
     onViewTransactionsClick: () -> Unit,
     onBack: () -> Unit,
 
@@ -50,7 +49,6 @@ fun MainSummaryScreen(
         .groupBy { it.currency }
         .mapValues { (_, list) -> list.sumOf { it.sum } }
 
-    // Step 2: Convert each currency to the defaultCurrency
     val convertedTotal = groupedSums.entries.sumOf { (currency, sum) ->
         if (currency == defaultCurrency) {
             sum
@@ -150,6 +148,7 @@ fun MainSummaryScreen(
             Button(onClick = onViewTransactionsClick) {
                 Text(stringResource(R.string.view_transactions))
             }
+            Spacer(Modifier.height(72.dp))
         }
     }
 }

@@ -66,7 +66,6 @@ import hu.bme.aut.android.hw.viewmodel.TransactionViewModel
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun NavGraph(
-    //viewModel: TransactionViewModel,
 ) {
     val navController = rememberNavController()
 
@@ -74,7 +73,6 @@ fun NavGraph(
     val currencyVm: CurrencyViewModel = hiltViewModel()
 
     val totalSum    by viewModel.totalSum.collectAsState()
-    val filteredSum by viewModel.filteredSum.collectAsState()
 
     var langMenuExpanded by remember { mutableStateOf(false) }
     val context = LocalContext.current
@@ -136,7 +134,6 @@ fun NavGraph(
         NavHost(
             navController,
             startDestination = Screen.Home.route,
-            //modifier = Modifier.weight(1f)
         ) {
 
             composable(Screen.Settings.route) {
@@ -161,8 +158,7 @@ fun NavGraph(
             }
             composable(Screen.Summary.route) {
                 MainSummaryScreen(
-                    totalBalance = totalSum,
-                    //filteredBalance = filteredSum,
+
                     onViewTransactionsClick = {
                         navController.navigate(Screen.Transactions.route)
                     },

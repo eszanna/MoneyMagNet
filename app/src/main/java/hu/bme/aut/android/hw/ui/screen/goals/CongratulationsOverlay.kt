@@ -39,7 +39,7 @@ fun CongratulationsOverlay(
     )
     val progress by animateLottieCompositionAsState(
         composition = composition,
-        iterations = LottieConstants.IterateForever, // 🎯 Loop forever
+        iterations = LottieConstants.IterateForever,
         speed = 1f,
         restartOnPlay = true
     )
@@ -47,7 +47,7 @@ fun CongratulationsOverlay(
     Box(
         Modifier
             .fillMaxSize()
-            .background(Color.Black.copy(alpha = 0.2f)), // Slight transparent background
+            .background(Color.Black.copy(alpha = 0.2f)),
         contentAlignment = Alignment.Center
     ) {
         Column(

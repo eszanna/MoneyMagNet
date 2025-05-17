@@ -40,7 +40,6 @@ fun MoneyRainOverlay(
     Box(
         Modifier
             .fillMaxSize(),
-            //.background(Color.Black.copy(alpha = 0.5f)),
         contentAlignment = Alignment.Center
     ) {
         LottieAnimation(

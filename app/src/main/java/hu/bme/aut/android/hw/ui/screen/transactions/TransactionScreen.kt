@@ -73,7 +73,6 @@ fun TransactionScreen(
     val categories by viewModel.categories.collectAsState()
 
     val currencyVm: CurrencyViewModel = hiltViewModel()
-    val currency by currencyVm.defaultCurrency.collectAsState()
 
     val filteredTxs by viewModel.uiState.collectAsState()
     val defaultCurrency by currencyVm.defaultCurrency.collectAsState()
@@ -96,8 +95,6 @@ fun TransactionScreen(
                 floatingActionButtonPosition = FabPosition.Center
 
     ) { innerPadding ->
-
-        val filteredSum   by viewModel.filteredSum.collectAsState()
 
         Column(
             modifier = Modifier
@@ -173,10 +170,10 @@ fun TransactionScreen(
                         transaction = tx,
                         onClick     = { onTransactionClick(tx.id) },
                         onDelete    = {
-                            // 1) delete immediately
+                            //  delete immediately
                             viewModel.delete(tx)
 
-                            // 2) snackbar with undo
+                            //  snack bar with undo
                             scope.launch {
                                 val res = snackbarHostState.showSnackbar(
                                     message     = "Deleted “${tx.description}”",
